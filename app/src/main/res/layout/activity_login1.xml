@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityLogin1"
+    android:layout_margin="3dp">
+
+    <TextView
+        android:text="LOGIN"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:text="  Username:"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:hint="Enter id"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:text="  Password:"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:hint="Enter password"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:onClick="onClick_OK"
+            android:id="@+id/buttonOk"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="2"
+            android:text="OK" />
+
+        <Button
+            android:onClick="onClick_Cancel"
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="cancel" />
+
+        <Button
+            android:onClick="onClick_Forgot"
+            android:id="@+id/buttonForot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Forgot password" />
+    </TableRow>
+
+</TableLayout>

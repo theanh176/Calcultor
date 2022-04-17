@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ReadWriteFirebase"
+            android:exported="true" />
+        <activity
             android:name=".createSqlite"
             android:exported="true" />
         <activity
             android:name=".Activity_view"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activityCalculator"
             android:exported="true">

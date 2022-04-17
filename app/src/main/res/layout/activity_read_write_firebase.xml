@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadWriteFirebase">
+
+    <TableLayout
+        android:layout_width="353dp"
+        android:layout_height="544dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Firebase"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                tools:ignore="MissingConstraints" />
+        </TableRow>
+
+        <TableLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColorHint="#989797"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/textPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textColorHint="#989797"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+        </TableLayout>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/teal_700"
+                android:text="DELETE"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:background="@color/teal_700"
+                android:text="Create"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+        </TableRow>
+        <TableLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPhoneBooks"
+                android:layout_width="316dp"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+    </TableLayout>
+
+
+</LinearLayout>
